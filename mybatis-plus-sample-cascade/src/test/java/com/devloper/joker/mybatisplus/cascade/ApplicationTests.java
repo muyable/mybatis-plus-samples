@@ -95,7 +95,7 @@ public class ApplicationTests {
     @Test
     public void customSelectPageWithXml() {
         Page<User> userPage = new Page<>(1, 5);
-        IPage<User> result = userMapper.selectPageByCustomWithXml(userPage, new QueryWrapper<User>().eq("role_id", 2).eq("username", "joker"));
+        IPage<User> result = userMapper.selectPageByCustomWithXml(userPage, new QueryWrapper<User>().eq("role_id", 1).eq("username", "joker"));
         logger.info("查询的列表数据为: {}", toJson(result));
     }
 

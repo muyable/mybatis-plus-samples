@@ -21,12 +21,12 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
     public void insertFill(MetaObject metaObject) {
         LOGGER.info("start insert fill ....");
         //避免使用metaObject.setValue()
-        this.setFieldValByName("operator", "Jerry", metaObject);
+        this.setFieldValByName("operator", "AA", metaObject);
     }
 
     @Override
     public void updateFill(MetaObject metaObject) {
         LOGGER.info("start update fill ....");
-        this.setFieldValByName("operator", "Tom", metaObject);
+        this.setFieldValByName("operator", "BB", metaObject);
     }
 }
